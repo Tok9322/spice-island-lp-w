@@ -109,13 +109,17 @@ a { color: inherit; text-decoration: none; }
 .access-info .stack { display: grid; gap: 10px; margin-top: 12px; grid-template-columns: 1fr; }
 @media (min-width: 520px) { .access-info .stack { grid-template-columns: repeat(2, auto); justify-content: start; } }
 
+/* About (Chef photo size) */
+#about .media-card { justify-self: center; max-width: 100%; }
+@media (min-width: 900px) { #about .media-card { max-width: 50%; } }
+
 /* Footer */
 .site-footer { background: var(--sub); color: var(--white); margin-top: 24px; }
 .footer-inner { display: grid; gap: 12px; grid-template-columns: 1fr; align-items: center; padding: 22px 0; }
 @media (min-width: 780px) { .footer-inner { grid-template-columns: 1fr auto auto; } }
 .footer-brand { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; }
 .footer-brand .logo-mark { color: var(--optional); }
-.footer-brand .logo-text { font-family: "Montserrat", sans-serif; }
+.footer-brand .logo-text { font-family: "Montserrat", sans-serif; color: var(--white); }
 .footer-social { display: inline-flex; gap: 14px; }
 .social-link { display: inline-flex; align-items: center; gap: 6px; color: var(--white); opacity: .9; }
 .social-link:hover { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
